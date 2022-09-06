@@ -1,0 +1,36 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+
+<Canvas @ref="canvas" />
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <Canvas @ref="canvas2" Responsive />
+        </div>
+    </div>
+</div>
+
+
+@code {
+    Canvas? canvas;
+    Canvas? canvas2;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (canvas != null)
+        {
+            await canvas.FillStyle();
+            await canvas.DrawRect(10,10, 50, 50);
+            await canvas.FillStyle();
+            await canvas.DrawRect(55,20,33,33);
+        }
+        if (canvas2 != null)
+        {
+            await canvas2.FillStyle();
+            await canvas2.DrawRect(100,100 ,100,100);
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}

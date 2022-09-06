@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blanvas", "Blanvas\Blanvas.csproj", "{14397FA8-112D-433E-979A-8D1780D4A4A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blanvas.Examples", "Blanvas.Examples\Blanvas.Examples.csproj", "{AF9AB531-2BD1-4F76-A92F-39637AA0F6BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14397FA8-112D-433E-979A-8D1780D4A4A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14397FA8-112D-433E-979A-8D1780D4A4A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14397FA8-112D-433E-979A-8D1780D4A4A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14397FA8-112D-433E-979A-8D1780D4A4A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9AB531-2BD1-4F76-A92F-39637AA0F6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9AB531-2BD1-4F76-A92F-39637AA0F6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9AB531-2BD1-4F76-A92F-39637AA0F6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9AB531-2BD1-4F76-A92F-39637AA0F6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE752A69-976B-408F-BCDB-FADEC9C16A82}
+	EndGlobalSection
+EndGlobal

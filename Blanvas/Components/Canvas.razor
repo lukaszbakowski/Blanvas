@@ -1,0 +1,36 @@
+﻿@inject BlanvasCore blanvas
+
+<canvas id="@guid" width="@Width" height="@Height" style="@_responsive">
+    Your browser doesn't support this content, use some modern web browser with javascript enabled
+</canvas>
+<p>
+    @guid
+</p>
+
+@code {
+    [Parameter]
+    public int Width { get; set; } = 150;
+    [Parameter]
+    public int Height { get; set; } = 150;
+    [Parameter]
+    public bool Responsive { get; set; } = false;
+    private string _responsive = string.Empty;
+
+    private readonly Guid guid = Guid.NewGuid();
+
+    protected override void OnInitialized()
+    {
+        if(Responsive) {
+            _responsive = "backgroundColor: blue; width: 100%; height: auto;";
+        }
+        base.OnInitialized();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine(guid.ToString());
+        await base.OnInitializedAsync();
+    }
+    public async Task FillStyle() => await blanvas.FillStyle(guid.ToString());
+    public async Task DrawRect(int x, int y, int width, int height) => await blanvas.DrawRect(guid.ToString(), x, y, width, height);
+}
